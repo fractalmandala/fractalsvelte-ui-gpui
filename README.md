@@ -4,6 +4,8 @@ The [fractalsvelte-ui](../fractalsvelte-ui) component library, for [GPUI](https:
 windows via [`gpuix-fractalsvelte`](../gpuix-fractalsvelte) — the fork of gpuix-svelte that can
 read a plain CSS stylesheet.
 
+[Github](https://github.com/fractalmandala/fractalsvelte-ui-gpui) | [NPM] (https://www.npmjs.com/package/@fractaldesign/fractalsvelte-ui-gpui)
+
 ## How the CSS is incorporated
 
 GPUI has no CSS engine and no global stylesheet. gpuix-fractalsvelte adds the one missing piece:
