@@ -4,7 +4,7 @@
 	import Icon from '../core/Icon.svelte';
 	import CloseButton from '../actions/CloseButton.svelte';
 	import { klFile, klUpload } from '../../icons/keylinestroke.ts';
-	import { prompt_for_paths } from 'gpuix-fractalsvelte';
+	import { prompt_for_paths } from '@fractaldesign/gpuix-fractalsvelte';
 	import type { Surface, Border, Shape, Shadow, TextSize } from '../../types.ts';
 
 	/** A GPUI file: the system path plus what the OS told us about it. */

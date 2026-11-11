@@ -1,5 +1,5 @@
 import '../src/lib/index.ts';
-import { mount_headless, click_text, click, find_text, all_text, check, finish } from 'gpuix-fractalsvelte/test';
+import { mount_headless, click_text, click, find_text, all_text, check, finish } from '@fractaldesign/gpuix-fractalsvelte/test';
 import Probe from './ClickProbe.svelte';
 
 mount_headless(Probe, { width: 300, height: 120 });

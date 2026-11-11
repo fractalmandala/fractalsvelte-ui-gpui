@@ -1,4 +1,4 @@
-import { mount_headless, find_test_id, tree, finish } from 'gpuix-fractalsvelte/test';
+import { mount_headless, find_test_id, tree, finish } from '@fractaldesign/gpuix-fractalsvelte/test';
 import '../src/lib/index.ts';
 import Alert from '../src/lib/components/core/Alert.svelte';
 

@@ -1,8 +1,8 @@
 <!-- @component The modal shell shared by Dialog, Drawer and CommandPalette. Ported from ../fractalsvelte-ui core/Modal.svelte — GPUI has no `<dialog>`, so the shell is the fork's `<Portal>` layer: a scrim that blocks the page, the panel on top of it, and Escape through on_window_key. -->
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import Portal from 'gpuix-fractalsvelte/components/Portal.svelte';
-	import { on_window_key } from 'gpuix-fractalsvelte';
+	import Portal from '@fractaldesign/gpuix-fractalsvelte/components/Portal.svelte';
+	import { on_window_key } from '@fractaldesign/gpuix-fractalsvelte';
 	import type { Surface, Border, Shadow, Shape } from '../../types.ts';
 
 	/** Where the panel sits inside the window-sized layer. */

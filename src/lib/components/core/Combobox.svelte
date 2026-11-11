@@ -5,7 +5,7 @@
 
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import Popover from 'gpuix-fractalsvelte/components/Popover.svelte';
+	import Popover from '@fractaldesign/gpuix-fractalsvelte/components/Popover.svelte';
 	import Icon from './Icon.svelte';
 	import { klCheck, klSearch } from '../../icons/keylinestroke.ts';
 	import type { Variant, Size, Shape, Shadow, TextSize } from '../../types.ts';

@@ -2,7 +2,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import CloseButton from '../actions/CloseButton.svelte';
-	import Scroller from 'gpuix-fractalsvelte/components/Scroller.svelte';
+	import Scroller from '@fractaldesign/gpuix-fractalsvelte/components/Scroller.svelte';
 	import Modal from './Modal.svelte';
 	import type { Surface, Border, Shadow, Shape, TextSize } from '../../types.ts';
 

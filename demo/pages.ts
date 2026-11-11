@@ -1,4 +1,4 @@
-import { mount_headless, screenshot, wheel, all_text, finish } from 'gpuix-fractalsvelte/test';
+import { mount_headless, screenshot, wheel, all_text, finish } from '@fractaldesign/gpuix-fractalsvelte/test';
 import Demo from './Demo.svelte';
 
 const m = mount_headless(Demo, { width: 720, height: 520 });

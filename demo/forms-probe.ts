@@ -1,5 +1,5 @@
 import '../src/lib/index.ts';
-import { mount_headless, screenshot, check, finish, all_text, wait, click_text, click_at, click_test_id } from 'gpuix-fractalsvelte/test';
+import { mount_headless, screenshot, check, finish, all_text, wait, click_text, click_at, click_test_id } from '@fractaldesign/gpuix-fractalsvelte/test';
 import Probe from './FormsProbe.svelte';
 console.log('---- compiled FormsProbe ----');
 

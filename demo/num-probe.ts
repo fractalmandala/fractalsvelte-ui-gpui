@@ -1,5 +1,5 @@
 import '../src/lib/index.ts';
-import { mount_headless, click_test_id, all_text, wait, finish } from 'gpuix-fractalsvelte/test';
+import { mount_headless, click_test_id, all_text, wait, finish } from '@fractaldesign/gpuix-fractalsvelte/test';
 import Probe from './NumProbe.svelte';
 mount_headless(Probe, { width: 400, height: 200 });
 await wait(40);

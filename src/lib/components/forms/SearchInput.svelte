@@ -7,7 +7,7 @@
 	import { getFieldLook } from './field-context.ts';
 	import Spinner from '../display/Spinner.svelte';
 	import CloseButton from '../actions/CloseButton.svelte';
-	import { on_window_key, focus_element } from 'gpuix-fractalsvelte';
+	import { on_window_key, focus_element } from '@fractaldesign/gpuix-fractalsvelte';
 
 	interface Props {
 		value?: string;

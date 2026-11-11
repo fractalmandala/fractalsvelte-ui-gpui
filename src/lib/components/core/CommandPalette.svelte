@@ -21,7 +21,7 @@
 	import { klSearch } from '../../icons/keylinestroke.ts';
 	import Modal from './Modal.svelte';
 	import Kbd from '../display/Kbd.svelte';
-	import { on_window_key } from 'gpuix-fractalsvelte';
+	import { on_window_key } from '@fractaldesign/gpuix-fractalsvelte';
 	import type { Surface, Border, Shadow, Shape, TextSize } from '../../types.ts';
 
 	interface Props {

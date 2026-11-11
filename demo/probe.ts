@@ -1,4 +1,4 @@
-import { mount_headless, finish } from 'gpuix-fractalsvelte/test';
+import { mount_headless, finish } from '@fractaldesign/gpuix-fractalsvelte/test';
 // mount each component directly under a theme wrapper
 import DemoButton from '../src/lib/components/core/Button.svelte';
 import DemoCard from '../src/lib/components/core/Card.svelte';

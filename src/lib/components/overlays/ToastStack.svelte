@@ -13,7 +13,7 @@
 
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import Portal from 'gpuix-fractalsvelte/components/Portal.svelte';
+	import Portal from '@fractaldesign/gpuix-fractalsvelte/components/Portal.svelte';
 	import Toast from '../core/Toast.svelte';
 
 	export type ToastPosition = 'top-left' | 'inline';

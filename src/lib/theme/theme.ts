@@ -5,7 +5,7 @@
  * token restyles in the next frame. For tokens the stylesheets do not define,
  * `setPalette`/`set_css_vars` take a raw map.
  */
-import { set_css_vars as _set_css_vars, use_palette } from 'gpuix-fractalsvelte';
+import { set_css_vars as _set_css_vars, use_palette } from '@fractaldesign/gpuix-fractalsvelte';
 
 export { use_palette };
 export const apply_tokens = _set_css_vars;

@@ -1,6 +1,6 @@
 <!-- Exercises every batch-1 component the way a consumer would. -->
 <script lang="ts">
-	import Scroller from 'gpuix-fractalsvelte/components/Scroller.svelte';
+	import Scroller from '@fractaldesign/gpuix-fractalsvelte/components/Scroller.svelte';
 	import {
 		FractalTheme,
 		Button,

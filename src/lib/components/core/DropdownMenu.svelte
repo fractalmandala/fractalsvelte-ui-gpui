@@ -9,7 +9,7 @@
 
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import Popover from 'gpuix-fractalsvelte/components/Popover.svelte';
+	import Popover from '@fractaldesign/gpuix-fractalsvelte/components/Popover.svelte';
 	import MenuList from '../overlays/MenuList.svelte';
 	import type { Size, Surface, Border, Shadow, Shape, TextSize } from '../../types.ts';
 

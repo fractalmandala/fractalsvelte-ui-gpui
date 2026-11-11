@@ -9,7 +9,7 @@
 </script>
 
 <script lang="ts">
-	import Popover from 'gpuix-fractalsvelte/components/Popover.svelte';
+	import Popover from '@fractaldesign/gpuix-fractalsvelte/components/Popover.svelte';
 	import Icon from './Icon.svelte';
 	import { klChevronDown, klCheck } from '../../icons/keylinestroke.ts';
 	import type { Variant, Surface, Size, Shape, Shadow, TextSize } from '../../types.ts';

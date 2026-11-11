@@ -1,4 +1,4 @@
-import { mount_headless, click_at, point_of, find_text, all_text, wait, finish } from 'gpuix-fractalsvelte/test';
+import { mount_headless, click_at, point_of, find_text, all_text, wait, finish } from '@fractaldesign/gpuix-fractalsvelte/test';
 import Probe from './DivProbe.svelte';
 mount_headless(Probe, { width: 300, height: 140 });
 await wait(40);
