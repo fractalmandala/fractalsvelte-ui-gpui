@@ -1,0 +1,76 @@
+/*
+ * GPUI-specific ports of canonical component classes. The canonical
+ * components.css expresses many of these with descendant selectors, gradients,
+ * box-shadow or pseudo-states GPUI has no field for, so the flat equivalents the
+ * GPUI components need live here. Everything else a component uses (`.button`,
+ * `.card`, `.badge`, `.tag`, `.input`, `.field`, border/size/shape/spacing
+ * utilities) comes from the vendored canonical layers imported by index.css.
+ */
+
+/* Canonical `.card-sized .card-title`, flattened for GPUI. */
+.card-title { font-size: var(--text-lg); font-weight: 600; line-height: 1.2; }
+.card-desc { font-size: var(--text-md); line-height: 1.2; }
+
+/* Canonical `button:disabled` — GPUI has no :disabled, so components set this class. */
+.disabled { opacity: 0.5; pointer-events: none; cursor: not-allowed; }
+
+/* The drawn checkbox box (GPUI has no checkbox input). Geometry is inline px;
+   colour comes from these classes, so theming stays in the palette. */
+.fsui-check {
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-xs);
+}
+.fsui-check.checked {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+.fsui-check.invalid { border-color: var(--danger); }
+
+/* The drawn switch. Track and knob are divs; the canonical radial-gradient
+   knob is replaced by a child circle. */
+.fsui-switch {
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+}
+.fsui-switch.checked {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+.fsui-switch.invalid { border-color: var(--danger); }
+.fsui-switch-knob { background-color: var(--text-muted); border-radius: 999px; }
+.fsui-switch-knob.checked { background-color: var(--white-fixed); }
+
+/* A progress track's fill rides the tone classes; the track keeps the fill's
+   ghost (the canonical SVG paints it at 15% opacity). */
+.fsui-track {
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+/* The tone names collide with the variant names: a `msg danger` alert also
+   carries the bare `danger` variant class, whose `:hover` rule (one class)
+   paints the hover fill over the tone. In the DOM cascade the later
+   `.msg.x` rule wins the tie; GPUI's renderer instead applies the pseudo
+   style on top, so these overrides re-state the tone on hover. */
+.msg.info:hover { background-color: var(--info-00); border-color: var(--info-25); color: var(--info-100); }
+.msg.success:hover { background-color: var(--success-00); border-color: var(--success-25); color: var(--success-100); }
+.msg.warning:hover { background-color: var(--warning-00); border-color: var(--warning-25); color: var(--warning-100); }
+.msg.danger:hover { background-color: var(--danger-00); border-color: var(--danger-25); color: var(--danger-100); }
+
+/* The canonical .data-table is a real <table> with descendant rules GPUI
+   cannot match; the GPUI table is flex rows carrying these classes. */
+.fsui-table { display: flex; flex-direction: column; font-size: var(--text-md, 14.4px); color: var(--text-primary, #0a0b0a); }
+.fsui-table-caption { text-align: left; padding: 12px 16px 4px; color: var(--text-secondary, #626462); }
+.fsui-table-head-row { display: flex; align-items: stretch; background-color: var(--state-hover, rgba(0, 0, 0, 0.06)); }
+.fsui-table-th {
+  display: flex; align-items: center; gap: 4px;
+  padding: 8px 16px; font-size: var(--text-xs, 10.72px); font-weight: 600;
+  color: var(--text-secondary, #626462); white-space: nowrap;
+}
+.fsui-table-row { display: flex; align-items: stretch; }
+.fsui-table-row:hover { background-color: var(--state-hover, rgba(0, 0, 0, 0.06)); }
+.fsui-table-row.selected { background-color: var(--state-selected, rgba(0, 0, 0, 0.1)); }
+.fsui-table-td { display: flex; align-items: center; padding: 8px 16px; border-bottom: 1px solid var(--border, #dedede); }
+.fsui-table-row:last-child .fsui-table-td { border-bottom: none; }

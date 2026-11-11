@@ -1,0 +1,14 @@
+import '../src/lib/index.ts';
+import { mount_headless, click_test_id, all_text, wait, finish } from 'gpuix-fractalsvelte/test';
+import Probe from './NumProbe.svelte';
+mount_headless(Probe, { width: 400, height: 200 });
+await wait(40);
+console.log('before:', all_text());
+await click_test_id('num-inc');
+await wait(40);
+console.log('after inc:', all_text());
+await click_test_id('num-dec');
+await click_test_id('num-dec');
+await wait(40);
+console.log('after dec x2:', all_text());
+finish('num-probe', 1);

@@ -1,0 +1,30 @@
+/*
+ * @fractaldesign/fractalsvelte-ui — GPUI edition, stylesheet entry.
+ * Importing this file registers every global rule and palette with the
+ * gpuix-fractalsvelte renderer. Each layer is the canonical fractalsvelte-ui
+ * stylesheet, vendored as-is where GPUI can read it:
+ * - theme.css        — GENERATED: the colour tokens precomputed to sRGB, as the
+ *                      base palette (`:root`) plus one named palette per mode
+ *                      (`[data-mode='light' | 'dark']`); a theme switch is
+ *                      use_palette('dark').
+ * - surfaces.css     — the flat surface/ink utility classes from the canonical
+ *                      colors-themes.css.
+ * - the rest         — the canonical layers verbatim. What GPUI cannot match
+ *                      (descendant selectors, @media blocks, box-shadow,
+ *                      gradients) is skipped with one line per kind at startup;
+ *                      components-gpui.css carries the flat ports of the ones
+ *                      components need.
+ */
+@import './theme.css';
+@import './surfaces.css';
+@import './configurations.css';
+@import './gaps-pads-margins.css';
+@import './shapes-sizes.css';
+@import './containers.css';
+@import './motion-animation.css';
+@import './typography.css';
+@import './border-elevation-focus.css';
+@import './component-props.css';
+@import './layout-shell.css';
+@import './components.css';
+@import './components-gpui.css';

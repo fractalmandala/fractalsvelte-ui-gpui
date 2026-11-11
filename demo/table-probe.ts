@@ -1,0 +1,12 @@
+import '../src/lib/index.ts';
+import { mount_headless, all_text, wait, tree, finish } from 'gpuix-fractalsvelte/test';
+import Probe from './TableProbe.svelte';
+mount_headless(Probe, { width: 400, height: 300 });
+await wait(40);
+const { find_test_id } = await import('gpuix-fractalsvelte/test');
+console.log('headrow:', JSON.stringify(find_test_id('headrow')?.testId));
+console.log('TEXT:', all_text().join(' '));
+const dump = (n, d=0) => { if (d<9) console.log('  '.repeat(d)+n.type+(n.testId?`#${n.testId}`:'')+(n.text?` t=${JSON.stringify(n.text.slice(0,16))}`:'')); for (const c of n.children??[]) dump(c,d+1); };
+dump(tree());
+dump(tree());
+finish('table-probe',1);

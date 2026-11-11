@@ -1,0 +1,36 @@
+{
+	"name": "@fractaldesign/fractalsvelte-ui-gpui",
+	"version": "0.1.0",
+	"description": "Fractalsvelte UI components for GPUI via gpuix-fractalsvelte: the canonical class-token stylesheet served through the renderer's stylesheet loader, components re-landed for GPUI's element set.",
+	"type": "module",
+	"license": "MIT",
+	"author": "Fractalmandala",
+	"keywords": [
+		"svelte",
+		"svelte5",
+		"gpui",
+		"gpuix",
+		"components",
+		"ui",
+		"design-system",
+		"design-tokens"
+	],
+	"svelte": "./src/lib/index.ts",
+	"types": "./src/lib/index.ts",
+	"exports": {
+		".": "./src/lib/index.ts",
+		"./css": "./src/lib/styles/index.css",
+		"./styles/*": "./src/lib/styles/*",
+		"./theme": "./src/lib/theme/theme.ts",
+		"./components/*": "./src/lib/components/*",
+		"./package.json": "./package.json"
+	},
+	"peerDependencies": {
+		"gpuix-fractalsvelte": ">=0.5.0",
+		"svelte": "^5.0.0"
+	},
+	"devDependencies": {
+		"svelte": "^5.57.1",
+		"typescript": "^5.9.3"
+	}
+}

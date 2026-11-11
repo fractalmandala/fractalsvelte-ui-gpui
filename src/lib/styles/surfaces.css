@@ -1,0 +1,34 @@
+/*
+ * Surface and ink utility classes, ported flat from the canonical
+ * colors-themes.css (the colour classes only; the tokens live in theme.css,
+ * which carries the same names precomputed to sRGB for GPUI).
+ */
+
+.bg-main, .bg { background-color: var(--bg); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-panel { background-color: var(--bg-panel); }
+.bg-overlay { background-color: var(--bg-overlay); }
+.bg-none { background-color: transparent; }
+.bg-black { background-color: var(--black-fixed); }
+.state-hover { background-color: var(--state-hover); }
+.state-selected { background-color: var(--state-selected); }
+.bg-input { background-color: var(--bg-input); }
+.bg-button { background-color: var(--bg-button); }
+.bg-button-secondary { background-color: var(--bg-button-secondary); }
+
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-inverse { color: var(--text-inverse); }
+.text-white { color: var(--white-fixed); }
+.text-black { color: var(--black-fixed); }
+.text-theme { color: var(--theme-color); }
+.text-theme-up { color: var(--theme-color-up); }
+.text-theme-down { color: var(--theme-color-down); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+.text-info { color: var(--info); }
+
+.bg-theme { background-color: var(--theme-color); }
+.bg-theme-down { background-color: var(--theme-color-down); }
