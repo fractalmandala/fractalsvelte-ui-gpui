@@ -32,5 +32,21 @@
 	"devDependencies": {
 		"svelte": "^5.57.1",
 		"typescript": "^5.9.3"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fractalmandala/fractalsvelte-ui-gpui.git"
+	},
+	"homepage": "https://github.com/fractalmandala/fractalsvelte-ui-gpui#readme",
+	"bugs": {
+		"url": "https://github.com/fractalmandala/fractalsvelte-ui-gpui/issues"
+	},
+	"files": [
+		"src",
+		"scripts",
+		"demo",
+		"README.md",
+		"AGENTS.md",
+		"!demo/*.png"
+	]
 }
